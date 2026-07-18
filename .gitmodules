@@ -1,0 +1,63 @@
+[submodule "projects/ImpossibleLightBulb"]
+	path = projects/ImpossibleLightBulb
+	url = https://github.com/SUDARSHANCHAUDHARI/ImpossibleLightBulb.git
+[submodule "projects/RunawayButton"]
+	path = projects/RunawayButton
+	url = https://github.com/SUDARSHANCHAUDHARI/RunawayButton.git
+[submodule "projects/ShyDoorbell"]
+	path = projects/ShyDoorbell
+	url = https://github.com/SUDARSHANCHAUDHARI/ShyDoorbell.git
+[submodule "projects/SnoozeEscape"]
+	path = projects/SnoozeEscape
+	url = https://github.com/SUDARSHANCHAUDHARI/SnoozeEscape.git
+[submodule "projects/BrewLater"]
+	path = projects/BrewLater
+	url = https://github.com/SUDARSHANCHAUDHARI/BrewLater.git
+[submodule "projects/TrashDash"]
+	path = projects/TrashDash
+	url = https://github.com/SUDARSHANCHAUDHARI/TrashDash.git
+[submodule "projects/MoodSwitch"]
+	path = projects/MoodSwitch
+	url = https://github.com/SUDARSHANCHAUDHARI/MoodSwitch.git
+[submodule "projects/FridgePatrol"]
+	path = projects/FridgePatrol
+	url = https://github.com/SUDARSHANCHAUDHARI/FridgePatrol.git
+[submodule "projects/CookieGuard"]
+	path = projects/CookieGuard
+	url = https://github.com/SUDARSHANCHAUDHARI/CookieGuard.git
+[submodule "projects/FiveMoreMinutes"]
+	path = projects/FiveMoreMinutes
+	url = https://github.com/SUDARSHANCHAUDHARI/FiveMoreMinutes.git
+[submodule "projects/WindowWars"]
+	path = projects/WindowWars
+	url = https://github.com/SUDARSHANCHAUDHARI/WindowWars.git
+[submodule "projects/LoginChase"]
+	path = projects/LoginChase
+	url = https://github.com/SUDARSHANCHAUDHARI/LoginChase.git
+[submodule "projects/ElevatorDrama"]
+	path = projects/ElevatorDrama
+	url = https://github.com/SUDARSHANCHAUDHARI/ElevatorDrama.git
+[submodule "projects/PaperMonster"]
+	path = projects/PaperMonster
+	url = https://github.com/SUDARSHANCHAUDHARI/PaperMonster.git
+[submodule "projects/DramaPlant"]
+	path = projects/DramaPlant
+	url = https://github.com/SUDARSHANCHAUDHARI/DramaPlant.git
+[submodule "projects/DismissMeNot"]
+	path = projects/DismissMeNot
+	url = https://github.com/SUDARSHANCHAUDHARI/DismissMeNot.git
+[submodule "projects/UmbrellaProblems"]
+	path = projects/UmbrellaProblems
+	url = https://github.com/SUDARSHANCHAUDHARI/UmbrellaProblems.git
+[submodule "projects/ShyMirror"]
+	path = projects/ShyMirror
+	url = https://github.com/SUDARSHANCHAUDHARI/ShyMirror.git
+[submodule "projects/Keyception"]
+	path = projects/Keyception
+	url = https://github.com/SUDARSHANCHAUDHARI/Keyception.git
+[submodule "projects/VolumeWar"]
+	path = projects/VolumeWar
+	url = https://github.com/SUDARSHANCHAUDHARI/VolumeWar.git
+[submodule "projects/TheLastSlice"]
+	path = projects/TheLastSlice
+	url = https://github.com/SUDARSHANCHAUDHARI/TheLastSlice.git

@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="TinyChaos is a collection of 21 playful interactive web experiments about everyday objects with terrible attitudes."
+    >
+    <meta name="theme-color" content="#15152a">
+    <title>TinyChaos — 21 Interactive Experiments</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#projects">Skip to projects</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="TinyChaos, back to top">
+        <span aria-hidden="true">TC</span>
+        <span>TinyChaos</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#field-notes">Field notes</a>
+        <a
+          href="https://github.com/SUDARSHANCHAUDHARI/TinyChaos"
+          target="_blank"
+          rel="noopener noreferrer"
+        >GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span aria-hidden="true">●</span> Chaos catalogue № 01–21</p>
+          <h1 id="hero-title">Tiny<span>Chaos</span></h1>
+          <p class="hero-statement">
+            Small interactions.<br>
+            Unexpected reactions.<br>
+            <strong>Everyday objects with terrible attitudes.</strong>
+          </p>
+          <div class="hero-count">
+            <span class="count-number">21</span>
+            <span>Interactive<br>Experiments</span>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore Projects</a>
+            <button class="button button-secondary" type="button" data-surprise>
+              <span aria-hidden="true">✦</span> Surprise Me
+            </button>
+            <a
+              class="button button-ghost"
+              href="https://github.com/SUDARSHANCHAUDHARI/TinyChaos"
+              target="_blank"
+              rel="noopener noreferrer"
+            >View on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="chaos-orbit" aria-hidden="true">
+          <div class="orbit-rings"></div>
+          <div class="orbit-note">Handle with curiosity</div>
+          <div class="orbit-center">
+            <span>tiny</span>
+            <strong>!</strong>
+            <span>chaos</span>
+          </div>
+
+          <svg class="orbit-object orbit-bulb" viewBox="0 0 100 120">
+            <path d="M50 8v18"/><path d="m28 18 9 15M72 18 63 33M17 42l17 7M83 42l-17 7"/>
+            <path d="M27 61c0-15 10-26 23-26s23 11 23 26c0 12-8 15-11 24H38c-3-9-11-12-11-24Z"/>
+            <path d="M39 91h22M41 99h18M45 107h10"/>
+          </svg>
+          <svg class="orbit-object orbit-button" viewBox="0 0 120 75">
+            <path d="m15 36-10 8 10 8M105 36l10 8-10 8"/>
+            <rect x="22" y="16" width="76" height="42" rx="12"/>
+            <path d="M43 38h34"/>
+          </svg>
+          <svg class="orbit-object orbit-door" viewBox="0 0 95 125">
+            <path d="M17 116V10h58v106M9 116h75"/><path d="M26 20h40v96H26z"/>
+            <circle cx="56" cy="68" r="3"/><circle cx="82" cy="49" r="6"/>
+          </svg>
+          <svg class="orbit-object orbit-clock" viewBox="0 0 110 105">
+            <path d="m31 16-12 13M79 16l12 13M29 88l-8 9M81 88l8 9"/>
+            <circle cx="55" cy="56" r="37"/><path d="M55 30v27l18 10"/>
+            <path d="M22 13 10 25M88 13l12 12"/>
+          </svg>
+          <svg class="orbit-object orbit-coffee" viewBox="0 0 120 105">
+            <path d="M31 34h58v47H31zM89 45h9c19 0 19 26 0 26h-9"/>
+            <path d="M43 25c-8-9 7-10 0-19M60 25c-8-9 7-10 0-19M77 25c-8-9 7-10 0-19M22 88h78"/>
+          </svg>
+          <svg class="orbit-object orbit-pizza" viewBox="0 0 110 105">
+            <path d="m53 8 43 84H11Z"/><path d="M27 62c18 10 35 10 53 0"/>
+            <circle cx="49" cy="49" r="6"/><circle cx="63" cy="73" r="5"/>
+          </svg>
+          <svg class="orbit-object orbit-key" viewBox="0 0 125 80">
+            <circle cx="34" cy="40" r="22"/><circle cx="34" cy="40" r="8"/>
+            <path d="M56 40h58M92 40v15M105 40v10"/>
+          </svg>
+          <svg class="orbit-object orbit-notice" viewBox="0 0 130 90">
+            <path d="M11 11h108v65H11z"/><circle cx="32" cy="33" r="9"/>
+            <path d="M51 29h48M51 42h34M25 59h76M111 3l12 12M123 3l-12 12"/>
+          </svg>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow-dark">The complete collection</p>
+            <h2 id="projects-title">Pick your problem.</h2>
+          </div>
+          <p class="section-intro">
+            Twenty-one small browser experiments. Zero sensible objects.
+            Choose a specimen, then see how badly it behaves.
+          </p>
+        </div>
+
+        <form class="filter-panel" id="project-filters" role="search" aria-label="Filter and sort projects">
+          <label class="search-control" for="project-search">
+            <span>Search the collection</span>
+            <span class="search-field">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+              <input
+                id="project-search"
+                name="search"
+                type="search"
+                autocomplete="off"
+                placeholder="Try “drag”, “pizza”, or “interface”…"
+              >
+            </span>
+          </label>
+
+          <label for="category-filter">
+            <span>Category</span>
+            <select id="category-filter" name="category">
+              <option value="All">All categories</option>
+              <option value="Interface">Interface</option>
+              <option value="Objects">Objects</option>
+              <option value="Machines">Machines</option>
+              <option value="Characters">Characters</option>
+              <option value="Food">Food</option>
+              <option value="Environment">Environment</option>
+              <option value="Nature">Nature</option>
+              <option value="Puzzle">Puzzle</option>
+            </select>
+          </label>
+
+          <label for="difficulty-filter">
+            <span>Difficulty</span>
+            <select id="difficulty-filter" name="difficulty">
+              <option value="All">All levels</option>
+              <option value="Easy">Easy</option>
+              <option value="Medium">Medium</option>
+            </select>
+          </label>
+
+          <label for="sort-projects">
+            <span>Sort by</span>
+            <select id="sort-projects" name="sort">
+              <option value="original">Original order</option>
+              <option value="name">Project name</option>
+              <option value="difficulty">Difficulty</option>
+              <option value="buildTime">Build time</option>
+              <option value="featured">Featured first</option>
+            </select>
+          </label>
+
+          <button class="clear-button" type="button" data-clear-filters>Clear filters</button>
+        </form>
+
+        <div class="results-toolbar">
+          <p id="results-count" class="results-count" aria-live="polite" aria-atomic="true">
+            Loading projects…
+          </p>
+          <button class="text-button" type="button" data-surprise>
+            <span aria-hidden="true">✦</span> Pick one for me
+          </button>
+        </div>
+
+        <aside class="surprise-result" id="surprise-result" aria-live="polite" aria-atomic="true" hidden>
+          <div>
+            <span class="surprise-label">Today’s tiny disaster</span>
+            <strong id="surprise-name"></strong>
+          </div>
+          <a
+            class="button button-small"
+            id="surprise-link"
+            href="#projects"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Open live demo <span aria-hidden="true">↗</span></a>
+        </aside>
+
+        <div class="project-grid" id="project-grid" aria-busy="true"></div>
+
+        <div class="empty-state" id="empty-state" hidden>
+          <span aria-hidden="true">¯\_(ツ)_/¯</span>
+          <h3>No chaos found.</h3>
+          <p>Try a broader search or clear the filters to see all 21 experiments.</p>
+          <button class="button button-dark" type="button" data-clear-filters>Clear filters</button>
+        </div>
+
+        <div class="load-error" id="load-error" role="alert" hidden>
+          <strong>The catalogue could not be loaded.</strong>
+          <span>Refresh the page to try again.</span>
+        </div>
+      </section>
+
+      <section class="stats-section" aria-labelledby="stats-title">
+        <div class="section-heading stats-heading">
+          <div>
+            <p class="eyebrow">Collection statistics</p>
+            <h2 id="stats-title">The damage report.</h2>
+          </div>
+          <p>Measured carefully. Under strictly uncontrolled conditions.</p>
+        </div>
+        <dl class="stats-grid" id="collection-stats">
+          <div><dt>Experiments</dt><dd>21</dd></div>
+          <div><dt>Categories</dt><dd>8</dd></div>
+          <div><dt>Featured</dt><dd>9</dd></div>
+          <div><dt>Interaction types</dt><dd>8</dd></div>
+        </dl>
+      </section>
+
+      <section class="field-notes" id="field-notes" aria-labelledby="notes-title">
+        <div class="notes-sticker" aria-hidden="true">No frameworks<br>were harmed</div>
+        <div>
+          <p class="eyebrow eyebrow-dark">Field notes</p>
+          <h2 id="notes-title">Built small.<br>Behaves badly.</h2>
+        </div>
+        <div class="notes-copy">
+          <p>
+            TinyChaos is a gallery of standalone HTML, CSS, and JavaScript experiments.
+            Each one turns a familiar interaction into a small piece of digital slapstick.
+          </p>
+          <p>
+            Every project lives in its own repository and opens as an independent demo.
+            This gallery simply keeps the whole unruly collection in one place.
+          </p>
+          <a
+            class="inline-link"
+            href="https://github.com/SUDARSHANCHAUDHARI/TinyChaos"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Browse the collection source <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="wordmark footer-wordmark" href="#top"><span aria-hidden="true">TC</span> TinyChaos</a>
+        <p>Small interactions. Unexpected reactions.</p>
+      </div>
+      <p>Created by <a href="https://github.com/SUDARSHANCHAUDHARI" target="_blank" rel="noopener noreferrer">Sudarshan Chaudhari</a> · 2026</p>
+    </footer>
+  </body>
+</html>
