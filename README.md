@@ -6,7 +6,8 @@
 
 TinyChaos is the main gallery for 21 standalone interactive web experiments. Each project takes a familiar object or interface and gives it an inconvenient personality. The gallery adds search, filtering, sorting, random selection, collection statistics, and direct links without changing or combining any project.
 
-**Live gallery:** [sudarshanchaudhari.github.io/TinyChaos](https://sudarshanchaudhari.github.io/TinyChaos/)
+**Live gallery:** [sudarshanchaudhari.github.io/TinyChaos](https://sudarshanchaudhari.github.io/TinyChaos/)<br>
+**Source repository:** [github.com/SUDARSHANCHAUDHARI/TinyChaos](https://github.com/SUDARSHANCHAUDHARI/TinyChaos)
 
 ## The collection
 
@@ -141,6 +142,15 @@ There is no framework, package manager, backend, database, analytics, authentica
 ## Contributing
 
 Bug reports, project suggestions, metadata corrections, and accessibility improvements are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request. Changes to a standalone experiment belong in that experiment's repository, not in the parent gallery.
+
+## Author
+
+TinyChaos was created and is maintained by **[Sudarshan Chaudhari](https://github.com/SUDARSHANCHAUDHARI)**, an independent developer at **SudarshanTechLabs**.
+
+- **GitHub:** [SUDARSHANCHAUDHARI](https://github.com/SUDARSHANCHAUDHARI)
+- **Email:** [sunny.sudarshan@gmail.com](mailto:sunny.sudarshan@gmail.com)
+- **Studio:** SudarshanTechLabs
+- **Copyright:** © 2026 Sudarshan Chaudhari
 
 ## License
 
