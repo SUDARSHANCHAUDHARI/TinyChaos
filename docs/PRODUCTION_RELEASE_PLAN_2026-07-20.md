@@ -117,7 +117,7 @@ The release is complete only when all of the following are true:
 - Renaming repositories or changing PascalCase folder names.
 - Rewriting Git history.
 - Homogenizing or replacing the 21 repo-specific README files.
-- Standardizing licenses without a separate explicit decision.
+- Standardizing licenses without a separate explicit decision. (Sudarshan later approved MIT standardization as a follow-up.)
 - Adding analytics, authentication, a backend, runtime dependencies, or third-party asset libraries.
 - Creating new GitHub Actions workflows in the child repositories.
 - Custom domains, Cloudflare Functions, or Workers application logic.
@@ -132,7 +132,7 @@ The release is complete only when all of the following are true:
 - Keep changes reversible; use new commits instead of destructive history changes.
 - Stage parent files by explicit path. Never stage changes inside submodules from the parent repository.
 - Do not add or expand GitHub Actions without explicit approval.
-- Retain each repository’s current license status unless Sudarshan explicitly approves a license change.
+- Retain each repository’s current license status unless Sudarshan explicitly approves a license change; MIT standardization was explicitly approved after the core release.
 - Use the TinyChaos parent design tokens as the shared visual baseline; repo-specific accents must remain compatible with that palette.
 - Do not declare UI consistency from code alone; every repository also needs Sudarshan’s manual visual approval.
 
@@ -144,7 +144,7 @@ The release is complete only when all of the following are true:
 - [ ] Confirm the local path is under `SUDARSHAN_CODE` and git identity is `SUDARSHANCHAUDHARI / sunny.sudarshan@gmail.com`.
 - [ ] Confirm the parent remote is `SUDARSHANCHAUDHARI/TinyChaos`.
 - [ ] Fetch parent and child remotes without merging or rewriting history.
-- [ ] Record each repository’s default branch, visibility, pushed SHA, license state, and Pages state.
+- [x] Record each repository’s default branch, visibility, pushed SHA, license state, and Pages state.
 - [ ] Confirm no unrelated local modifications exist.
 
 **Gate 0:** Do not continue if authentication points to the wrong GitHub account, any worktree is dirty unexpectedly, or local and remote release commits differ.
@@ -349,7 +349,7 @@ Recommended defaults are shown first:
 
 - **Cloudflare rollout:** pilot `TinyChaos`, `ImpossibleLightBulb` (raw static), and `Keyception` (`dist` build), then expand; do not connect all 22 at once.
 - **UI standard:** use the TinyChaos parent palette and visual grammar as the source of truth while keeping each project’s unique scene and compatible accent.
-- **Licenses:** preserve each repository’s current license status for this release; handle standardization separately.
+- **Licenses:** standardize all 22 repositories under the MIT License; preserve valid existing MIT text and add the official text only where missing.
 - **Canonical URLs:** retain GitHub Pages URLs in `projects.json`; treat Cloudflare as mirrors.
 - **Custom domains:** defer until all GitHub Pages sites and Cloudflare pilot deployments are stable.
 
