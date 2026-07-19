@@ -5,7 +5,7 @@
 **Owner and author:** Sudarshan Chaudhari (`SUDARSHANCHAUDHARI`)
 **Organization:** SudarshanTechLabs
 **Contact:** `sunny.sudarshan@gmail.com`
-**Status:** Plan only — no repository visibility or deployment settings are changed by this document
+**Status:** Executed through GitHub Pages on 19 July 2026 (Asia/Bangkok); Cloudflare Pages explicitly deferred
 
 ## 1. Objective
 
@@ -76,28 +76,28 @@ The following work was completed before this plan:
 - The parent README includes Sudarshan Chaudhari’s author and contact details.
 - Git commit metadata includes `sunny.sudarshan@gmail.com`; this disclosure has been reviewed and accepted.
 
-These results must be rechecked tomorrow immediately before changing visibility because repository state can change.
+These results were rechecked immediately before the visibility and deployment changes on 19 July 2026. The detailed evidence is recorded in `docs/PRODUCTION_RELEASE_REPORT_2026-07-19.md`.
 
 ## 4. Success criteria
 
 The release is complete only when all of the following are true:
 
-- [ ] All 22 repositories report `PUBLIC` visibility.
-- [ ] Every repository has a clean working tree and the intended `main` commit is pushed.
-- [ ] Every existing repository-specific verification command passes.
-- [ ] No secret or private-file finding remains unresolved.
-- [ ] All 22 repositories pass the shared TinyChaos UI checklist.
-- [ ] All 22 repositories receive Sudarshan’s manual UI approval.
-- [ ] All 22 repositories use the common TinyChaos design language while retaining their unique project interaction.
-- [ ] All 21 child GitHub Pages URLs return HTTP 200 and serve the expected project.
-- [ ] The TinyChaos GitHub Pages URL returns HTTP 200 and lists all 21 projects.
-- [ ] Every TinyChaos source link resolves to the matching public GitHub repository.
-- [ ] Every TinyChaos demo link resolves to the matching live GitHub Pages site.
-- [ ] The parent repository checks out all now-public submodules recursively without a private token.
-- [ ] The parent README no longer describes child repositories as private.
-- [ ] The parent Pages workflow succeeds after its private-submodule fallback is removed.
-- [ ] Any Cloudflare Pages pilot URL is recorded and verified, or Cloudflare is explicitly deferred.
-- [ ] A final release report records evidence, exceptions, and follow-up work.
+- [x] All 22 repositories report `PUBLIC` visibility.
+- [x] Every repository has a clean working tree and the intended `main` commit is pushed.
+- [x] Every existing repository-specific verification command passes.
+- [x] No secret or private-file finding remains unresolved.
+- [x] All 22 repositories pass the shared TinyChaos UI checklist.
+- [x] All 22 repositories receive Sudarshan’s manual UI approval.
+- [x] All 22 repositories use the common TinyChaos design language while retaining their unique project interaction.
+- [x] All 21 child GitHub Pages URLs return HTTP 200 and serve the expected project.
+- [x] The TinyChaos GitHub Pages URL returns HTTP 200 and lists all 21 projects.
+- [x] Every TinyChaos source link resolves to the matching public GitHub repository.
+- [x] Every TinyChaos demo link resolves to the matching live GitHub Pages site.
+- [x] The parent repository checks out all now-public submodules recursively without a private token.
+- [x] The parent README no longer describes child repositories as private.
+- [x] The parent Pages workflow succeeds after its private-submodule fallback is removed.
+- [x] Cloudflare Pages is explicitly deferred; GitHub Pages remains canonical.
+- [x] A final release report records evidence, exceptions, and follow-up work.
 
 ## 5. Scope boundaries
 
