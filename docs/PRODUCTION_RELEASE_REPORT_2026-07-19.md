@@ -9,6 +9,7 @@
 - **GitHub Pages:** 21/21 child sites were configured for `main` / root, reached `built`, and returned HTTP 200 with the expected local title and `Sudarshan Chaudhari` attribution.
 - **Parent Pages:** Workflow run `29687206045` succeeded after recursively checking out public submodules. The gallery returned HTTP 200; live `projects.json` returned HTTP 200 with exactly 21 projects and matching public GitHub/custom-domain URL prefixes.
 - **Parent release commit:** `7dc7647` (`release: publish TinyChaos portfolio`)
+- **Custom-domain cutover commit:** `314259e` (`docs: use custom gallery demo domains`)
 - **Parent licensing follow-up commit:** `4aeceb8` (`docs: standardize portfolio licenses`)
 - **Parent documentation:** README now describes public child repositories; Pages checkout is strict recursive public-submodule checkout with no token fallback.
 - **Cloudflare Pages:** 22/22 custom domains are configured and verified over HTTPS. Each returned HTTP 200 and the expected local page title. Custom domains are now canonical; GitHub Pages remains the fallback.
