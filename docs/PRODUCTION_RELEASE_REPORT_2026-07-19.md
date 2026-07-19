@@ -9,6 +9,7 @@
 - **GitHub Pages:** 21/21 child sites were configured for `main` / root, reached `built`, and returned HTTP 200 with the expected local title and `Sudarshan Chaudhari` attribution.
 - **Parent Pages:** Workflow run `29687206045` succeeded after recursively checking out public submodules. The gallery returned HTTP 200; live `projects.json` returned HTTP 200 with exactly 21 projects and canonical GitHub/Pages URL prefixes.
 - **Parent release commit:** `7dc7647` (`release: publish TinyChaos portfolio`)
+- **Parent licensing follow-up commit:** `4aeceb8` (`docs: standardize portfolio licenses`)
 - **Parent documentation:** README now describes public child repositories; Pages checkout is strict recursive public-submodule checkout with no token fallback.
 - **Cloudflare Pages:** Explicitly deferred. GitHub Pages remains canonical.
 - **Exceptions:** None blocking. The temporary uncommitted design-system preview was removed after the manual gate and was not published.
