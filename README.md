@@ -74,7 +74,7 @@ TinyChaos/
 
 The directories inside `projects/` are Git submodules. The parent repository records a URL and an exact commit for each project; it does not copy, merge, or rewrite any project history.
 
-> **Access note:** the 21 project repositories are currently private. Recursive clones require a GitHub account with read access until those repositories are intentionally made public.
+> **Access note:** all 21 project repositories are public. Recursive clones work anonymously, and each project can also be opened directly from the gallery table above.
 
 Clone the gallery and all projects in one command:
 
@@ -117,9 +117,7 @@ The workflow at `.github/workflows/deploy-pages.yml` deploys the parent gallery 
 4. Wait for the `github-pages` environment deployment to finish.
 5. Visit [https://sudarshanchaudhari.github.io/TinyChaos/](https://sudarshanchaudhari.github.io/TinyChaos/).
 
-The workflow requests a recursive submodule checkout, then publishes only `index.html`, `style.css`, `script.js`, `projects.json`, and gallery assets. Individual project demos remain independent GitHub Pages deployments.
-
-GitHub's default workflow token cannot read other private repositories. To make recursive checkout succeed while the projects remain private, add a fine-grained, read-only repository token as the `SUBMODULE_TOKEN` Actions secret. Without that optional secret, the checkout step records a warning and the independent parent gallery still deploys; no project source is included in its artifact.
+The workflow requests a strict recursive checkout of the public submodules, then publishes only `index.html`, `style.css`, `script.js`, `projects.json`, and gallery assets. Individual project demos remain independent GitHub Pages deployments; no submodule token is required.
 
 ## Accessibility
 

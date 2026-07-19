@@ -22,16 +22,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out gallery and project submodules
-        id: checkout
-        continue-on-error: true
         uses: actions/checkout@v7
         with:
           submodules: recursive
-          token: ${{ secrets.SUBMODULE_TOKEN || github.token }}
-
-      - name: Report unavailable private submodules
-        if: steps.checkout.outcome == 'failure'
-        run: echo "::warning::One or more private project submodules were unavailable. The independent parent gallery will still be deployed."
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
