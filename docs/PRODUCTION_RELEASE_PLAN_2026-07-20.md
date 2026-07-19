@@ -5,7 +5,7 @@
 **Owner and author:** Sudarshan Chaudhari (`SUDARSHANCHAUDHARI`)
 **Organization:** SudarshanTechLabs
 **Contact:** `sunny.sudarshan@gmail.com`
-**Status:** Executed through GitHub Pages on 19 July 2026 (Asia/Bangkok); Cloudflare Pages explicitly deferred
+**Status:** Executed with 22 custom-domain checks on 19 July 2026 (Asia/Bangkok); custom domains are now the canonical demo URLs and GitHub Pages remains the fallback
 
 ## 1. Objective
 
@@ -14,9 +14,9 @@ Prepare the complete TinyChaos portfolio for a safe public release:
 - Make the 21 individual project repositories public.
 - Keep the already-public `TinyChaos` gallery public.
 - Audit all 22 repositories and align them with one shared TinyChaos UI design system.
-- Publish every project through GitHub Pages.
-- Confirm the TinyChaos gallery points to working public repositories and live demos.
-- Optionally connect the repositories to Cloudflare Pages as secondary mirrors after GitHub Pages is stable.
+- Publish every project through GitHub Pages and verify its custom production domain.
+- Confirm the TinyChaos gallery points to working public repositories and live custom-domain demos.
+- Keep GitHub Pages available as the documented fallback for every gallery and child demo.
 
 The release must preserve the exact repository names, static implementation, accessibility behavior, and repository history. It must not expose secrets or accidentally publish local-only files.
 
@@ -24,29 +24,29 @@ The release must preserve the exact repository names, static implementation, acc
 
 ### Canonical hosting
 
-GitHub Pages will be the canonical production host because `projects.json` already uses URLs in this format:
+Cloudflare Pages custom domains are the canonical production demo hosts. `projects.json` and the embedded fallback metadata use this format:
 
 ```text
-https://sudarshanchaudhari.github.io/RepositoryName/
+https://repositoryname.sudarshantechlabs.com/
 ```
 
 Every child repository will use:
 
 - Default branch: `main`
-- GitHub Pages source: `main` / repository root
+- Cloudflare Pages production branch: `main`
+- GitHub Pages source: `main` / repository root (fallback)
 - Custom GitHub Actions workflow: none
 - Canonical repository: `https://github.com/SUDARSHANCHAUDHARI/RepositoryName`
 
 ### Cloudflare position
 
-Use **Cloudflare Pages**, not a custom Cloudflare Worker, for Git-connected static-site mirroring. Cloudflare Pages can connect directly to selected GitHub repositories and redeploy after pushes.
+Use **Cloudflare Pages**, not a custom Cloudflare Worker, for the Git-connected static sites. The owner connected all 22 repositories and configured the custom domains. A serial HTTPS check returned HTTP 200 and the expected local title for every domain.
 
-Cloudflare is a secondary phase, not a blocker for the GitHub release:
+GitHub Pages remains the fallback deployment path:
 
-1. Finish and verify GitHub Pages for all 22 repositories.
-2. Pilot Cloudflare Pages with `TinyChaos` and two child projects.
-3. Expand to the remaining projects only if the pilot is clean.
-4. Keep the GitHub Pages URLs canonical in `projects.json` during this release.
+1. Child GitHub Pages sites stay enabled from `main` / repository root.
+2. The parent GitHub Pages site remains available if the custom-domain host needs recovery.
+3. New gallery metadata changes must preserve the custom-domain pattern in both metadata sources.
 
 ### Shared UI design system
 
@@ -89,14 +89,15 @@ The release is complete only when all of the following are true:
 - [x] All 22 repositories pass the shared TinyChaos UI checklist.
 - [x] All 22 repositories receive Sudarshan’s manual UI approval.
 - [x] All 22 repositories use the common TinyChaos design language while retaining their unique project interaction.
-- [x] All 21 child GitHub Pages URLs return HTTP 200 and serve the expected project.
-- [x] The TinyChaos GitHub Pages URL returns HTTP 200 and lists all 21 projects.
+- [x] All 21 child GitHub Pages fallback URLs return HTTP 200 and serve the expected project.
+- [x] The TinyChaos GitHub Pages fallback URL returns HTTP 200 and lists all 21 projects.
+- [x] All 22 custom-domain URLs return HTTPS 200 and serve the expected local title.
 - [x] Every TinyChaos source link resolves to the matching public GitHub repository.
-- [x] Every TinyChaos demo link resolves to the matching live GitHub Pages site.
+- [x] Every TinyChaos demo link resolves to the matching live custom-domain site.
 - [x] The parent repository checks out all now-public submodules recursively without a private token.
 - [x] The parent README no longer describes child repositories as private.
 - [x] The parent Pages workflow succeeds after its private-submodule fallback is removed.
-- [x] Cloudflare Pages is explicitly deferred; GitHub Pages remains canonical.
+- [x] Cloudflare Pages custom domains are verified and canonical; GitHub Pages remains the fallback.
 - [x] A final release report records evidence, exceptions, and follow-up work.
 
 ## 5. Scope boundaries
@@ -120,7 +121,7 @@ The release is complete only when all of the following are true:
 - Standardizing licenses without a separate explicit decision. (Sudarshan later approved MIT standardization as a follow-up.)
 - Adding analytics, authentication, a backend, runtime dependencies, or third-party asset libraries.
 - Creating new GitHub Actions workflows in the child repositories.
-- Custom domains, Cloudflare Functions, or Workers application logic.
+- Cloudflare Functions or Workers application logic.
 
 ## 6. Non-negotiable safety rules
 
@@ -250,52 +251,49 @@ Once all child repositories are public:
 
 **Gate 5:** The parent builds without private credentials and all gallery links work.
 
-### Phase 6 — Optional Cloudflare Pages pilot
+### Phase 6 — Verify custom Cloudflare Pages domains
 
-This phase starts only after Gate 5 and only with Sudarshan’s confirmation.
+This phase was completed after Gate 5 with Sudarshan’s confirmation.
 
-- [ ] Connect the official Cloudflare Pages GitHub integration.
-- [ ] Select only `TinyChaos` plus two pilot child repositories.
-- [ ] Use production branch `main`.
-- [ ] For a raw static project, use no framework preset, build command `exit 0`, and output directory `.`.
-- [ ] For `Keyception`, `LoginChase`, or `WindowWars`, use `pnpm build` and output directory `dist` if selected for the pilot.
-- [ ] Confirm Cloudflare creates preview/production deployments from the intended repository only.
-- [ ] Verify each `pages.dev` URL and its local assets.
-- [ ] Record Cloudflare project names and URLs outside source code unless a later documentation update is approved.
-- [ ] If the pilot is stable, connect the remaining repositories in controlled batches.
+- [x] Connect the official Cloudflare Pages GitHub integration.
+- [x] Configure the parent gallery plus all 21 child repositories.
+- [x] Use production branch `main`.
+- [x] Use no framework preset and repository-root output for the static sites.
+- [x] Confirm deployments serve the intended repository content.
+- [x] Configure the `sudarshantechlabs.com` custom domain for each repository.
+- [x] Verify all 22 HTTPS custom-domain URLs return HTTP 200 and the expected local title.
+- [x] Keep GitHub Pages deployments available as fallback URLs.
 
-Cloudflare Free currently allows up to 100 Pages projects, so 22 projects fit within the project-count limit. Its Free plan has one concurrent build and a monthly build limit, so connect repositories in batches rather than starting 22 builds simultaneously.
-
-**Gate 6:** Cloudflare mirrors are either verified or explicitly deferred. GitHub Pages remains canonical in either case.
+**Gate 6:** All 22 custom domains are verified and canonical. GitHub Pages remains the recovery path.
 
 ## 8. Repository release matrix
 
-Legend: `Pre` = production/security preflight, `UI` = shared UI audit plus manual approval, `Pub` = public visibility, `GHP` = GitHub Pages enabled, `200` = correct HTTP response, `CF` = optional Cloudflare mirror.
+Legend: `Pre` = production/security preflight, `UI` = shared UI audit plus manual approval, `Pub` = public visibility, `GHP` = GitHub Pages fallback enabled, `200` = correct HTTP response, `CF` = custom-domain host verified.
 
-| # | Repository | Existing verification command | Canonical GitHub Pages URL | Pre | UI | Pub | GHP | 200 | CF |
+| # | Repository | Existing verification command | Canonical custom-domain URL | Pre | UI | Pub | GHP | 200 | CF |
 |---:|---|---|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | `ImpossibleLightBulb` | `node scripts/verify.mjs` | `https://sudarshanchaudhari.github.io/ImpossibleLightBulb/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 2 | `RunawayButton` | `bash scripts/verify.sh` | `https://sudarshanchaudhari.github.io/RunawayButton/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 3 | `ShyDoorbell` | `node scripts/verify.mjs` | `https://sudarshanchaudhari.github.io/ShyDoorbell/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 4 | `SnoozeEscape` | `pnpm check` | `https://sudarshanchaudhari.github.io/SnoozeEscape/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 5 | `BrewLater` | `pnpm check` | `https://sudarshanchaudhari.github.io/BrewLater/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 6 | `TrashDash` | `pnpm check` | `https://sudarshanchaudhari.github.io/TrashDash/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 7 | `MoodSwitch` | `bash scripts/verify.sh` | `https://sudarshanchaudhari.github.io/MoodSwitch/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 8 | `FridgePatrol` | `pnpm verify` | `https://sudarshanchaudhari.github.io/FridgePatrol/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 9 | `CookieGuard` | `pnpm check` | `https://sudarshanchaudhari.github.io/CookieGuard/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 10 | `FiveMoreMinutes` | `node scripts/verify.js` | `https://sudarshanchaudhari.github.io/FiveMoreMinutes/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 11 | `WindowWars` | `pnpm verify` | `https://sudarshanchaudhari.github.io/WindowWars/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 12 | `LoginChase` | `pnpm verify` | `https://sudarshanchaudhari.github.io/LoginChase/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 13 | `ElevatorDrama` | `pnpm check` | `https://sudarshanchaudhari.github.io/ElevatorDrama/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 14 | `PaperMonster` | `node scripts/verify.mjs` | `https://sudarshanchaudhari.github.io/PaperMonster/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 15 | `DramaPlant` | `pnpm verify` | `https://sudarshanchaudhari.github.io/DramaPlant/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 16 | `DismissMeNot` | `pnpm check` | `https://sudarshanchaudhari.github.io/DismissMeNot/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 17 | `UmbrellaProblems` | `pnpm check` | `https://sudarshanchaudhari.github.io/UmbrellaProblems/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 18 | `ShyMirror` | `pnpm check` | `https://sudarshanchaudhari.github.io/ShyMirror/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 19 | `Keyception` | `pnpm build` | `https://sudarshanchaudhari.github.io/Keyception/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 20 | `VolumeWar` | `pnpm check` | `https://sudarshanchaudhari.github.io/VolumeWar/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 21 | `TheLastSlice` | `node scripts/verify.mjs` | `https://sudarshanchaudhari.github.io/TheLastSlice/` | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 22 | `TinyChaos` | Parent metadata, link, workflow, and `actionlint` checks | `https://sudarshanchaudhari.github.io/TinyChaos/` | [ ] | [ ] | [x] | [x] | [ ] | [ ] |
+| 1 | `ImpossibleLightBulb` | `node scripts/verify.mjs` | `https://impossiblelightbulb.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 2 | `RunawayButton` | `bash scripts/verify.sh` | `https://runawaybutton.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 3 | `ShyDoorbell` | `node scripts/verify.mjs` | `https://shydoorbell.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 4 | `SnoozeEscape` | `pnpm check` | `https://snoozeescape.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 5 | `BrewLater` | `pnpm check` | `https://brewlater.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 6 | `TrashDash` | `pnpm check` | `https://trashdash.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 7 | `MoodSwitch` | `bash scripts/verify.sh` | `https://moodswitch.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 8 | `FridgePatrol` | `pnpm verify` | `https://fridgepatrol.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 9 | `CookieGuard` | `pnpm check` | `https://cookieguard.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 10 | `FiveMoreMinutes` | `node scripts/verify.js` | `https://fivemoreminutes.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 11 | `WindowWars` | `pnpm verify` | `https://windowwars.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 12 | `LoginChase` | `pnpm verify` | `https://loginchase.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 13 | `ElevatorDrama` | `pnpm check` | `https://elevatordrama.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 14 | `PaperMonster` | `node scripts/verify.mjs` | `https://papermonster.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 15 | `DramaPlant` | `pnpm verify` | `https://dramaplant.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 16 | `DismissMeNot` | `pnpm check` | `https://dismissmenot.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 17 | `UmbrellaProblems` | `pnpm check` | `https://umbrellaproblems.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 18 | `ShyMirror` | `pnpm check` | `https://shymirror.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 19 | `Keyception` | `pnpm build` | `https://keyception.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 20 | `VolumeWar` | `pnpm check` | `https://volumewar.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 21 | `TheLastSlice` | `node scripts/verify.mjs` | `https://thelastslice.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
+| 22 | `TinyChaos` | Parent metadata, link, workflow, and `actionlint` checks | `https://tinychaos.sudarshantechlabs.com/` | [x] | [x] | [x] | [x] | [x] | [x] |
 
 ## 9. Suggested schedule
 
@@ -347,11 +345,11 @@ Visibility and Pages rollback are operational fallbacks, not substitutes for pre
 
 Recommended defaults are shown first:
 
-- **Cloudflare rollout:** pilot `TinyChaos`, `ImpossibleLightBulb` (raw static), and `Keyception` (`dist` build), then expand; do not connect all 22 at once.
+- **Cloudflare rollout:** all 22 repositories are connected and their custom domains have passed the serial HTTPS/title check.
 - **UI standard:** use the TinyChaos parent palette and visual grammar as the source of truth while keeping each project’s unique scene and compatible accent.
 - **Licenses:** standardize all 22 repositories under the MIT License; preserve valid existing MIT text and add the official text only where missing.
-- **Canonical URLs:** retain GitHub Pages URLs in `projects.json`; treat Cloudflare as mirrors.
-- **Custom domains:** defer until all GitHub Pages sites and Cloudflare pilot deployments are stable.
+- **Canonical URLs:** use `https://<lowercase-repository>.sudarshantechlabs.com/` in `projects.json` and fallback metadata; retain GitHub Pages URLs as documented fallbacks.
+- **Custom domains:** completed for TinyChaos plus all 21 child repositories.
 
 ## 13. Final release report template
 
@@ -362,7 +360,7 @@ Recommended defaults are shown first:
 - Repositories public: __ / 22
 - Shared UI checks and manual approvals: __ / 22
 - GitHub Pages sites verified: __ / 22
-- Cloudflare Pages mirrors verified: __ / 22 (or deferred)
+- Cloudflare Pages custom domains verified: __ / 22
 - Security findings: none / details
 - Test failures: none / details
 - Exceptions and deferred items:

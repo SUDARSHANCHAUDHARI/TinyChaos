@@ -6,34 +6,34 @@
 
 TinyChaos is the main gallery for 21 standalone interactive web experiments. Each project takes a familiar object or interface and gives it an inconvenient personality. The gallery adds search, filtering, sorting, random selection, collection statistics, and direct links without changing or combining any project.
 
-**Live gallery:** [sudarshanchaudhari.github.io/TinyChaos](https://sudarshanchaudhari.github.io/TinyChaos/)<br>
+**Live gallery:** [tinychaos.sudarshantechlabs.com](https://tinychaos.sudarshantechlabs.com/) · [GitHub Pages fallback](https://sudarshanchaudhari.github.io/TinyChaos/)<br>
 **Source repository:** [github.com/SUDARSHANCHAUDHARI/TinyChaos](https://github.com/SUDARSHANCHAUDHARI/TinyChaos)
 
 ## The collection
 
 | # | Project | Live demo | Source |
 |---:|---|---|---|
-| 1 | Impossible Light Bulb | [Open demo](https://sudarshanchaudhari.github.io/ImpossibleLightBulb/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/ImpossibleLightBulb) |
-| 2 | Runaway Button | [Open demo](https://sudarshanchaudhari.github.io/RunawayButton/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/RunawayButton) |
-| 3 | Shy Doorbell | [Open demo](https://sudarshanchaudhari.github.io/ShyDoorbell/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/ShyDoorbell) |
-| 4 | Snooze Escape | [Open demo](https://sudarshanchaudhari.github.io/SnoozeEscape/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/SnoozeEscape) |
-| 5 | Brew Later | [Open demo](https://sudarshanchaudhari.github.io/BrewLater/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/BrewLater) |
-| 6 | Trash Dash | [Open demo](https://sudarshanchaudhari.github.io/TrashDash/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/TrashDash) |
-| 7 | Mood Switch | [Open demo](https://sudarshanchaudhari.github.io/MoodSwitch/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/MoodSwitch) |
-| 8 | Fridge Patrol | [Open demo](https://sudarshanchaudhari.github.io/FridgePatrol/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/FridgePatrol) |
-| 9 | Cookie Guard | [Open demo](https://sudarshanchaudhari.github.io/CookieGuard/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/CookieGuard) |
-| 10 | Five More Minutes | [Open demo](https://sudarshanchaudhari.github.io/FiveMoreMinutes/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/FiveMoreMinutes) |
-| 11 | Window Wars | [Open demo](https://sudarshanchaudhari.github.io/WindowWars/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/WindowWars) |
-| 12 | Login Chase | [Open demo](https://sudarshanchaudhari.github.io/LoginChase/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/LoginChase) |
-| 13 | Elevator Drama | [Open demo](https://sudarshanchaudhari.github.io/ElevatorDrama/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/ElevatorDrama) |
-| 14 | Paper Monster | [Open demo](https://sudarshanchaudhari.github.io/PaperMonster/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/PaperMonster) |
-| 15 | Drama Plant | [Open demo](https://sudarshanchaudhari.github.io/DramaPlant/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/DramaPlant) |
-| 16 | Dismiss Me Not | [Open demo](https://sudarshanchaudhari.github.io/DismissMeNot/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/DismissMeNot) |
-| 17 | Umbrella Problems | [Open demo](https://sudarshanchaudhari.github.io/UmbrellaProblems/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/UmbrellaProblems) |
-| 18 | Shy Mirror | [Open demo](https://sudarshanchaudhari.github.io/ShyMirror/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/ShyMirror) |
-| 19 | Keyception | [Open demo](https://sudarshanchaudhari.github.io/Keyception/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/Keyception) |
-| 20 | Volume War | [Open demo](https://sudarshanchaudhari.github.io/VolumeWar/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/VolumeWar) |
-| 21 | The Last Slice | [Open demo](https://sudarshanchaudhari.github.io/TheLastSlice/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/TheLastSlice) |
+| 1 | Impossible Light Bulb | [Open demo](https://impossiblelightbulb.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/ImpossibleLightBulb) |
+| 2 | Runaway Button | [Open demo](https://runawaybutton.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/RunawayButton) |
+| 3 | Shy Doorbell | [Open demo](https://shydoorbell.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/ShyDoorbell) |
+| 4 | Snooze Escape | [Open demo](https://snoozeescape.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/SnoozeEscape) |
+| 5 | Brew Later | [Open demo](https://brewlater.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/BrewLater) |
+| 6 | Trash Dash | [Open demo](https://trashdash.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/TrashDash) |
+| 7 | Mood Switch | [Open demo](https://moodswitch.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/MoodSwitch) |
+| 8 | Fridge Patrol | [Open demo](https://fridgepatrol.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/FridgePatrol) |
+| 9 | Cookie Guard | [Open demo](https://cookieguard.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/CookieGuard) |
+| 10 | Five More Minutes | [Open demo](https://fivemoreminutes.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/FiveMoreMinutes) |
+| 11 | Window Wars | [Open demo](https://windowwars.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/WindowWars) |
+| 12 | Login Chase | [Open demo](https://loginchase.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/LoginChase) |
+| 13 | Elevator Drama | [Open demo](https://elevatordrama.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/ElevatorDrama) |
+| 14 | Paper Monster | [Open demo](https://papermonster.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/PaperMonster) |
+| 15 | Drama Plant | [Open demo](https://dramaplant.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/DramaPlant) |
+| 16 | Dismiss Me Not | [Open demo](https://dismissmenot.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/DismissMeNot) |
+| 17 | Umbrella Problems | [Open demo](https://umbrellaproblems.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/UmbrellaProblems) |
+| 18 | Shy Mirror | [Open demo](https://shymirror.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/ShyMirror) |
+| 19 | Keyception | [Open demo](https://keyception.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/Keyception) |
+| 20 | Volume War | [Open demo](https://volumewar.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/VolumeWar) |
+| 21 | The Last Slice | [Open demo](https://thelastslice.sudarshantechlabs.com/) | [Repository](https://github.com/SUDARSHANCHAUDHARI/TheLastSlice) |
 
 ## Gallery features
 
@@ -107,7 +107,7 @@ python3 -m http.server 8000
 
 Then open [http://localhost:8000](http://localhost:8000). You can also open `index.html` directly; the embedded fallback in `script.js` supplies metadata when a browser blocks local JSON requests.
 
-## GitHub Pages deployment
+## Production deployment
 
 The workflow at `.github/workflows/deploy-pages.yml` deploys the parent gallery when `main` changes and can also be run manually.
 
@@ -115,9 +115,9 @@ The workflow at `.github/workflows/deploy-pages.yml` deploys the parent gallery 
 2. Under **Build and deployment**, select **GitHub Actions** as the source.
 3. Push to `main`, or open **Actions → Deploy TinyChaos to GitHub Pages → Run workflow**.
 4. Wait for the `github-pages` environment deployment to finish.
-5. Visit [https://sudarshanchaudhari.github.io/TinyChaos/](https://sudarshanchaudhari.github.io/TinyChaos/).
+5. Visit the canonical gallery at [https://tinychaos.sudarshantechlabs.com/](https://tinychaos.sudarshantechlabs.com/), or use [the GitHub Pages fallback](https://sudarshanchaudhari.github.io/TinyChaos/).
 
-The workflow requests a strict recursive checkout of the public submodules, then publishes only `index.html`, `style.css`, `script.js`, `projects.json`, and gallery assets. Individual project demos remain independent GitHub Pages deployments; no submodule token is required.
+The workflow requests a strict recursive checkout of the public submodules, then publishes only `index.html`, `style.css`, `script.js`, `projects.json`, and gallery assets. The canonical child demo pattern is `https://<lowercase-repository>.sudarshantechlabs.com/`; each GitHub Pages URL remains a fallback. No submodule token is required.
 
 ## Accessibility
 
@@ -133,7 +133,7 @@ When contributing, test keyboard order, 200% browser zoom, reduced-motion mode, 
 - JSON metadata
 - Inline SVG illustrations
 - Git submodules
-- GitHub Pages and GitHub Actions
+- Cloudflare Pages custom domains (canonical demos), GitHub Pages fallback, and GitHub Actions
 
 There is no framework, package manager, backend, database, analytics, authentication, or external image/icon library.
 

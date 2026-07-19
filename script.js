@@ -1,7 +1,7 @@
 "use strict";
 
 const GITHUB_USERNAME = "SUDARSHANCHAUDHARI";
-const PAGES_USERNAME = "sudarshanchaudhari";
+const CUSTOM_DOMAIN_SUFFIX = "sudarshantechlabs.com";
 const VALID_CATEGORIES = new Set([
   "Interface",
   "Objects",
@@ -36,6 +36,10 @@ const EXPECTED_REPOSITORIES = new Set([
   "VolumeWar",
   "TheLastSlice",
 ]);
+
+function customDemoUrl(repository) {
+  return `https://${repository.toLowerCase()}.${CUSTOM_DOMAIN_SUFFIX}/`;
+}
 
 // Kept in this file so the catalogue also works when index.html is opened via file://.
 const FALLBACK_PROJECTS = [
@@ -72,7 +76,7 @@ const FALLBACK_PROJECTS = [
   interaction,
   featured,
   status: "Complete",
-  demoUrl: `https://${PAGES_USERNAME}.github.io/${repository}/`,
+  demoUrl: customDemoUrl(repository),
   repositoryUrl: `https://github.com/${GITHUB_USERNAME}/${repository}`,
 }));
 
@@ -183,7 +187,7 @@ function validateProjects(projects) {
       problems.push("status must be Complete");
     }
 
-    const expectedDemoUrl = `https://${PAGES_USERNAME}.github.io/${project.repository}/`;
+    const expectedDemoUrl = customDemoUrl(project.repository);
     const expectedRepositoryUrl = `https://github.com/${GITHUB_USERNAME}/${project.repository}`;
     if (project.demoUrl !== expectedDemoUrl) {
       problems.push(`demoUrl must equal ${expectedDemoUrl}`);

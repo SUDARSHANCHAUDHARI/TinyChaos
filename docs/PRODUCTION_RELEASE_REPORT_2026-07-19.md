@@ -7,11 +7,12 @@
 - **Visibility:** 22/22 repositories are public. Each child reviewed commit was pushed to `main` before its visibility change.
 - **Licensing:** 22/22 repositories now contain a valid root `LICENSE` with the MIT License. The 11 existing valid MIT files were preserved; 11 license-only commits added the missing files with `Sudarshan Chaudhari` copyright.
 - **GitHub Pages:** 21/21 child sites were configured for `main` / root, reached `built`, and returned HTTP 200 with the expected local title and `Sudarshan Chaudhari` attribution.
-- **Parent Pages:** Workflow run `29687206045` succeeded after recursively checking out public submodules. The gallery returned HTTP 200; live `projects.json` returned HTTP 200 with exactly 21 projects and canonical GitHub/Pages URL prefixes.
+- **Parent Pages:** Workflow run `29687206045` succeeded after recursively checking out public submodules. The gallery returned HTTP 200; live `projects.json` returned HTTP 200 with exactly 21 projects and matching public GitHub/custom-domain URL prefixes.
 - **Parent release commit:** `7dc7647` (`release: publish TinyChaos portfolio`)
 - **Parent licensing follow-up commit:** `4aeceb8` (`docs: standardize portfolio licenses`)
 - **Parent documentation:** README now describes public child repositories; Pages checkout is strict recursive public-submodule checkout with no token fallback.
-- **Cloudflare Pages:** Explicitly deferred. GitHub Pages remains canonical.
+- **Cloudflare Pages:** 22/22 custom domains are configured and verified over HTTPS. Each returned HTTP 200 and the expected local page title. Custom domains are now canonical; GitHub Pages remains the fallback.
+- **Custom-domain rollout:** Parent gallery uses `https://tinychaos.sudarshantechlabs.com/`; child demos use `https://<lowercase-repository>.sudarshantechlabs.com/` and retain their GitHub Pages URLs as fallbacks.
 - **Exceptions:** None blocking. The temporary uncommitted design-system preview was removed after the manual gate and was not published.
 
 ## Final child heads
